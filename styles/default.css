@@ -22,14 +22,12 @@ main{
 }
 
 h2{
-    text-align: center;
+   text-align: center;
 }
 
-img{
-    width: 60%;
-}
+
 
 figure{
     text-align: center;
-    italics:
+    font-style:italic;
 }
