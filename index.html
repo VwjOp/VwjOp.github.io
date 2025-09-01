@@ -10,45 +10,56 @@
 </head>
 <body>
     <header>
-        <h1> Ethan Vue's Weeping Tiger || ITIS3135</h1>
+        <h1>Ethan Vue's Weeping Tiger || ITIS3135</h1>
         <nav>
             <a href="./">Home</a>
             ||
             <a href="introduction.html">Introduction</a>
             ||
-              <a href="contract.html">Contract</a>
-            ||
+            <a href="contract.html">Contract</a>
         </nav>
     </header>
+
     <main>
         <h2>Home</h2>
         <p>Hello, you've made it to my 3135 Course Page</p>
-
     </main>
+
     <footer>
-        <a href="https://webpages.uncc.edu/evue">Charlotte.edu</a>
-        ||
-        <a href="https://github.com/VwjOp/VwjOp.github.io">Github</a>
-        ||
-        <a href="https://www.freecodecamp.org/ethanvue">freeCodeCamp</a>
-        ||
-        <a href=https://www.codecademy.com/profiles/course9838028615>Codeacademy</a>
-        ||
-        <a href="https://www.linkedin.com/in/ethan-vue-906825380/">LinkedIn</a>
-    </nav>
-    <p>Page Built by <a href="weepingtiger.com"></a>Weeping tiger Enterprises</a>&copy;2023</p>
-    <a href="https://validator.w3.org.check?uri=referer" id="validation_link_html">
-      <img stlye="border:0;width:88px;height:31px"
-      src="https//VwjOp.github.io/itis3135/zarchives/html_validation.png" alt="Valid HTML!"> 
-    </a>
+        <nav>
+            <a href="https://webpages.uncc.edu/evue">Charlotte.edu</a>
+            ||
+            <a href="https://github.com/VwjOp/VwjOp.github.io">Github</a>
+            ||
+            <a href="https://www.freecodecamp.org/ethanvue">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/course9838028615">Codecademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/ethan-vue-906825380/">LinkedIn</a>
+        </nav>
+        <p>Page Built by <a href="https://weepingtiger.com">Weeping Tiger Enterprises</a> ©2023</p>
 
+        <!-- HTML Validator -->
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px"
+                src="https://VwjOp.github.io/itis3135/zarchives/html_validation.png" 
+                alt="Valid HTML!">
+        </a>
+
+        <!-- CSS Validator -->
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss" 
+                alt="Valid CSS!">
+        </a>
     </footer>
+
+    <script>
+        document.getElementById("validation_link_html")
+            .setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css")
+            .setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </body>
- <script>
-      document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-
-         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-</script>
-<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-
 </html>
