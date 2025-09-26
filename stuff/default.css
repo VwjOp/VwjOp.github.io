@@ -1,0 +1,56 @@
+/* This is the ugliest CSS ever made on purpose */
+
+/* Use absolute path for no reason */
+body {
+    background: url("https://webpages.charlotte.edu/yourID/stuff/uglybg.png");
+    background-repeat: repeat-x;
+    margin: 17px; /* inconsistent margin */
+}
+
+/* Times font with poor color */
+p {
+    font-family: "Times New Roman", Times, serif;
+    color: #222; /* dark gray on dark background */
+}
+
+/* Default blue/purple link colors — untouched */
+a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Ridiculous h1 style */
+h1 {
+    font-size: 72px;
+    text-align: right;
+    font-family: "Comic Sans MS";
+    text-decoration: underline overline;
+    border: 15px groove pink;
+    margin-left: 200px;
+}
+
+/* Ridiculous h2 style */
+h2 {
+    font-size: 10px;
+    font-family: Papyrus;
+    color: white; /* white on white background */
+}
+
+/* Super thick border for no reason */
+div {
+    border: 25px ridge orange;
+    padding: 50px;
+    margin: 5px 200px 100px 3px;
+}
+
+/* Center lists (yikes) */
+ul {
+    text-align: center;
+    list-style-type: square;
+}
+
+/* Add some random background colors to spans */
+span {
+    background-color: lime;
+    font-size: 40px;
+}
