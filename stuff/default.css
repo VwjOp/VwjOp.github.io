@@ -1,13 +1,10 @@
-/* This is the ugliest CSS ever made on purpose */
-
-/* Use absolute path for no reason */
 body {
     background: url("https://webpages.charlotte.edu/yourID/stuff/uglybg.png");
     background-repeat: repeat-x;
-    margin: 17px; /* inconsistent margin */
+    margin: 17px; 
 }
 
-/* Times font with poor color */
+
 p {
     font-family: "Times New Roman", Times, serif;
     color: #222; /* dark gray on dark background */
