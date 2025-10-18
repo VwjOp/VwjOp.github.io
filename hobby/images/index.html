@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fishing Hobby</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f4ff;
+      color: #033e57;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0288d1;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 1rem 2rem;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    figure {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    figcaption {
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+    footer {
+      background-color: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #033e57;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+    form label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    button {
+      background-color: #033e57;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #055b84;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fishing: My Favorite Hobby</h1>
+    <nav>
+      <a href="#" onclick="showSection('what')">What ✦</a>
+      <a href="#" onclick="showSection('who')">Who ✦</a>
+      <a href="#" onclick="showSection('when')">When ✦</a>
+      <a href="#" onclick="showSection('where')">Where ✦</a>
+      <a href="#" onclick="showSection('how')">How ✦</a>
+      <a href="#" onclick="showSection('why')">Why ✦</a>
+      <a href="#" onclick="showSection('ai')">AI Prompts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="what" class="active">
+      <h2>What is Fishing?</h2>
+      <p>Fishing is the activity of catching fish, either for food, sport, or relaxation. It can involve many techniques such as bait fishing, fly fishing, or using nets and traps.</p>
+      <p>For me, fishing is both a relaxing hobby and an exciting challenge that connects me with nature.</p>
+      <p>It’s a timeless practice that teaches patience, skill, and appreciation for the outdoors.</p>
+      <figure>
+        <img src="images/fishing-lake.jpg" alt="A calm lake with someone fishing" width="400">
+        <figcaption>AI Prompt: *A peaceful lakeside scene with a person fishing at sunrise, digital art style.*</figcaption>
+      </figure>
+    </section>
+
+    <section id="who">
+      <h2>Who Enjoys Fishing?</h2>
+      <p>Fishing is enjoyed by people of all ages—from children learning to cast for the first time to experienced anglers chasing trophy catches.</p>
+      <p>I usually fish with my friends and family, making each trip a chance to bond and create lasting memories.</p>
+      <p>Some of the most famous anglers include professional fishermen who compete in tournaments worldwide.</p>
+      <figure>
+        <img src="images/family-fishing.jpg" alt="Family fishing together" width="400">
+        <figcaption>AI Prompt: *A family fishing together on a sunny day near a riverbank.*</figcaption>
+      </figure>
+    </section>
+
+    <section id="when">
+      <h2>When Do I Go Fishing?</h2>
+      <table>
+        <tr><th>Season</th><th>Preferred Time</th><th>Type of Fish</th></tr>
+        <tr><td>Spring</td><td>Morning</td><td>Trout, Bass</td></tr>
+        <tr><td>Summer</td><td>Evening</td><td>Catfish, Crappie</td></tr>
+        <tr><td>Fall</td><td>Afternoon</td><td>Pike, Perch</td></tr>
+      </table>
+      <figure>
+        <img src="images/sunset-fishing.jpg" alt="Fishing at sunset" width="400">
+        <figcaption>AI Prompt: *An angler casting a fishing line into the lake at sunset, warm lighting.*</figcaption>
+      </figure>
+    </section>
+
+    <section id="where">
+      <h2>Where Do I Fish?</h2>
+      <p>I often fish at local lakes and rivers around my area. Sometimes, I visit the coast for saltwater fishing adventures.</p>
+      <p>Each fishing spot has its own charm—whether it’s a quiet pond surrounded by trees or a windy pier with waves crashing below.</p>
+      <p>Exploring new fishing locations helps me improve my skills and discover new types of fish.</p>
+      <figure>
+        <img src="images/river-fishing.jpg" alt="River fishing spot" width="400">
+        <figcaption>AI Prompt: *A fisherman standing by a river surrounded by forest, misty morning scene.*</figcaption>
+      </figure>
+    </section>
+
+    <section id="how">
+      <h2>How Do I Fish?</h2>
+      <p>I start by choosing the right bait and rod based on the type of fish I want to catch. Then, I cast my line and patiently wait for a bite.</p>
+      <p>Modern fishing also involves using gear like fish finders or specialized reels for different fishing styles.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+        <label for="experience">Describe your fishing experience:</label>
+        <textarea id="experience" name="experience" rows="4" placeholder="Share your favorite fishing story..."></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <figure>
+        <img src="images/fishing-gear.jpg" alt="Fishing gear and tackle box" width="400">
+        <figcaption>AI Prompt: *Close-up of fishing gear, lures, and rods neatly arranged on a wooden dock.*</figcaption>
+      </figure>
+    </section>
+
+    <section id="why">
+      <h2>Why I Love Fishing</h2>
+      <p>Fishing helps me escape the fast pace of daily life. It’s a moment of peace where I can think clearly and enjoy nature.</p>
+      <p>There’s also a thrill in the uncertainty—never knowing exactly what I’ll catch or when.</p>
+      <p>Most of all, fishing gives me time to relax, reflect, and recharge mentally.</p>
+      <figure>
+        <img src="images/peaceful-lake.jpg" alt="Peaceful fishing view" width="400">
+        <figcaption>AI Prompt: *A tranquil lake scene viewed from a fishing dock, calm waters and morning mist.*</figcaption>
+      </figure>
+    </section>
+
+    <section id="ai">
+      <h2>AI Prompts and Tools Used</h2>
+      <p>I used AI tools to generate the images and design ideas for this page. Below are the prompts and tools I used:</p>
+      <ul>
+        <li><strong>Model:</strong> DALL·E or ChatGPT Image Generator</li>
+        <li><strong>Prompt Examples:</strong>
+          <ul>
+            <li>“A peaceful lakeside scene with a person fishing at sunrise.”</li>
+            <li>“A fisherman standing by a misty river with pine trees in the background.”</li>
+            <li>“Close-up of colorful fishing lures on a wooden dock.”</li>
+          </ul>
+        </li>
+      </ul>
+      <p>If I only used AI for images, I will include a submission comment stating so.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed by Ethan Vue</p>
+    <p>
+      <a href="https://validator.w3.org/">HTML Validator</a> |
+      <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a> |
+      <a href="https://wave.webaim.org/">Accessibility Checker</a>
+    </p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
