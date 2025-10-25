@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Vue Weeping Tiger || ITIS3135 Introduction Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <h1>Ethan Vue's Weeping Tiger || ITIS3135</h1>
+        <nav>
+            <a href="./">Home</a> ||
+            <a href="introduction.html">Introduction</a> ||
+            <a href="contract.html">Contract</a> ||
+            <a href="intro_form.html">Introduction Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="form-container">
+            <h2>Introduction Form</h2>
+            <h3>Please submit the form below.</h3>
+            
+            <form id="introForm">
+                <!-- Name Fields -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="firstName">First Name: *</label>
+                    <input type="text" id="firstName" name="firstName" required 
+                           placeholder="Enter your first name" value="Ethan">
+                    
+                    <label for="middleName">Middle Name/Initial (optional):</label>
+                    <input type="text" id="middleName" name="middleName" 
+                           placeholder="Enter your middle name or initial" value="">
+                    
+                    <label for="nickname">Nickname/Preferred Name (optional):</label>
+                    <input type="text" id="nickname" name="nickname" 
+                           placeholder="Enter your nickname" value="">
+                    
+                    <label for="lastName">Last Name: *</label>
+                    <input type="text" id="lastName" name="lastName" required 
+                           placeholder="Enter your last name" value="Vue">
+                </fieldset>
+
+                <!-- Mascot Information -->
+                <fieldset>
+                    <legend>Mascot Information</legend>
+                    
+                    <label for="mascotAdjective">Mascot Adjective: *</label>
+                    <input type="text" id="mascotAdjective" name="mascotAdjective" required 
+                           placeholder="e.g., Mighty" value="Weeping">
+                    
+                    <label for="mascotAnimal">Mascot Animal: *</label>
+                    <input type="text" id="mascotAnimal" name="mascotAnimal" required 
+                           placeholder="e.g., Panther" value="Tiger">
+                </fieldset>
+
+                <!-- Image and Caption -->
+                <fieldset>
+                    <legend>Image</legend>
+                    
+                    <label for="pictureFile">Upload Image File: *</label>
+                    <input type="file" id="pictureFile" name="pictureFile" accept="image/*" required>
+                    
+                    <label for="pictureCaption">Picture Caption: *</label>
+                    <input type="text" id="pictureCaption" name="pictureCaption" required 
+                           placeholder="Enter image caption" value="Ethan Vue">
+                </fieldset>
+
+                <!-- Main Bullets -->
+                <fieldset>
+                    <legend>Background Information</legend>
+                    
+                    <label for="personalBg">Personal Background: *</label>
+                    <textarea id="personalBg" name="personalBg" required rows="3"
+                              placeholder="Personal background information">I have 3 brothers — one in college with me, the other two in high school and elementary school. I had an internship last summer that taught me how to write scripts and use my hands on the floor.</textarea>
+                    
+                    <label for="academicBg">Academic Background: *</label>
+                    <textarea id="academicBg" name="academicBg" required rows="2"
+                              placeholder="Academic background information">I am an undergraduate student at UNCC and a sophomore.</textarea>
+                    
+                    <label for="subjectBg">Background in the Subject: *</label>
+                    <textarea id="subjectBg" name="subjectBg" required rows="2"
+                              placeholder="Background in subject">The only background I have in computer science is making Minecraft plugins.</textarea>
+                    
+                    <label for="platform">Primary Platform/Computer: *</label>
+                    <textarea id="platform" name="platform" required rows="2"
+                              placeholder="Primary computer platform">My primary computer is a Dell.</textarea>
+                    
+                    <label for="funnyItem">Funny/Interesting Item: *</label>
+                    <textarea id="funnyItem" name="funnyItem" required rows="2"
+                              placeholder="Something funny or interesting">I chose Weeping Tiger because as a kid I thought tigers cried all the time.</textarea>
+                </fieldset>
+
+                <!-- Courses -->
+                <fieldset>
+                    <legend>Courses I'm Taking, & Why</legend>
+                    <div id="courses-container">
+                        <div class="course-entry">
+                            <label>Department: *</label>
+                            <input type="text" class="courseDept" required placeholder="e.g., ITIS" value="ITIS">
+                            
+                            <label>Number: *</label>
+                            <input type="text" class="courseNum" required placeholder="e.g., 3135" value="3135">
+                            
+                            <label>Name: *</label>
+                            <input type="text" class="courseName" required placeholder="e.g., Web Development" value="Front End Web App Development">
+                            
+                            <label>Reason: *</label>
+                            <textarea class="courseReason" required rows="2" placeholder="Why taking this course">Required, and I wanted to learn HTML.</textarea>
+                        </div>
+                        <div class="course-entry">
+                            <label>Department: *</label>
+                            <input type="text" class="courseDept" required placeholder="e.g., ITIS" value="ITIS">
+                            
+                            <label>Number: *</label>
+                            <input type="text" class="courseNum" required placeholder="e.g., 3200" value="3200">
+                            
+                            <label>Name: *</label>
+                            <input type="text" class="courseName" required placeholder="Course name" value="Intro to Info Security and Privacy">
+                            
+                            <label>Reason: *</label>
+                            <textarea class="courseReason" required rows="2" placeholder="Why taking this course">Elective, I want to learn cybersecurity.</textarea>
+                            <button type="button" class="deleteCourse">Delete Course</button>
+                        </div>
+                        <div class="course-entry">
+                            <label>Department: *</label>
+                            <input type="text" class="courseDept" required placeholder="e.g., MATH" value="MATH">
+                            
+                            <label>Number: *</label>
+                            <input type="text" class="courseNum" required placeholder="e.g., 1120" value="1120">
+                            
+                            <label>Name: *</label>
+                            <input type="text" class="courseName" required placeholder="Course name" value="Calculus">
+                            
+                            <label>Reason: *</label>
+                            <textarea class="courseReason" required rows="2" placeholder="Why taking this course">Required.</textarea>
+                            <button type="button" class="deleteCourse">Delete Course</button>
+                        </div>
+                        <div class="course-entry">
+                            <label>Department: *</label>
+                            <input type="text" class="courseDept" required placeholder="e.g., PSYC" value="PSYC">
+                            
+                            <label>Number: *</label>
+                            <input type="text" class="courseNum" required placeholder="e.g., 1101" value="1101">
+                            
+                            <label>Name: *</label>
+                            <input type="text" class="courseName" required placeholder="Course name" value="General Psychology">
+                            
+                            <label>Reason: *</label>
+                            <textarea class="courseReason" required rows="2" placeholder="Why taking this course">Taking it as an elective.</textarea>
+                            <button type="button" class="deleteCourse">Delete Course</button>
+                        </div>
+                    </div>
+                    <button type="button" id="addCourse">Add Another Course</button>
+                </fieldset>
+
+                <!-- Form Buttons -->
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="button" id="clearBtn">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result-container" style="display: none;">
+            <!-- Result will be dynamically generated here -->
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://webpages.uncc.edu/evue">Charlotte.edu</a> ||
+        <a href="https://github.com/VwjOp/VwjOp.github.io">Github</a> ||
+        <a href="https://www.freecodecamp.org/ethanvue">freeCodeCamp</a> ||
+        <a href="https://www.codecademy.com/profiles/course9838028615">Codeacademy</a> ||
+        <a href="https://www.linkedin.com/in/ethan-vue-906825380/">LinkedIn</a>
+        
+        <p>Page built by <a href="vuecreativesolutions.com">Vue Creative Solutions</a> &copy; 2023</p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px"
+            src="https://VwjOp.github.io/itis3135/zarchives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/introduction.js"></script>
+</body>
+</html>
